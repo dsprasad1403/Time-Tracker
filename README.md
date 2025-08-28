@@ -48,6 +48,8 @@ This makes it a **practical study/productivity companion** that gives you full c
 
 ### For mobile you can simply download the combined_html_css_js.html file and start using it by just opening it. 
 
+### You can use mobile version for desktop as well, for easy editing and improvement I created For PC folder and placed .html, .css and .js files
+
 ---
 
 ## 📖 Usage
