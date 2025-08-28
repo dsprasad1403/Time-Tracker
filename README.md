@@ -41,7 +41,7 @@ This makes it a **practical study/productivity companion** that gives you full c
 
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/your-username/time-tracker.git
+   git clone https://github.com/dsprasad1403/Time-Tracker.git
    cd time-tracker
 2. Open index.html in your browser.
     (Runs fully offline — no backend required.)
