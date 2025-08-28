@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Time Tracker</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="nav-left">
+      <span class="logo">⏱</span> Time Tracker
+    </div>
+    <div class="nav-right">
+      <button class="nav-btn" id="homeNav">Home</button>
+      <button class="nav-btn" id="calendarNav">Calendar</button>
+      <button class="nav-btn" id="exportBtn">Export</button>
+      <button class="nav-btn" id="importBtn">Import</button>
+      <input type="file" id="importFile" style="display:none;">
+    </div>
+  </nav>
+
+  <!-- Home Page -->
+  <section id="homePage">
+    <h2 id="sessionHeading">Today's Sessions</h2>
+
+    <h2 id="timer">00:00:00</h2>
+    <div class="controls">
+      <button id="startBtn">Start</button>
+      <button id="pauseBtn" disabled>Pause</button>
+      <button id="stopBtn" disabled>Stop</button>
+      <button id="unlockBtn" style="display:none; opacity:1;">Unlock</button>
+      <button id="lockBtn" style="display:none; opacity:0.3;">Lock</button>
+    </div>
+
+    <h3>Sessions</h3>
+    <div id="sessions"></div>
+
+    <!-- Bigger total time -->
+    <div id="total" class="big-total">Daily Total: 0 hrs 0 mins 0 secs</div>
+  </section>
+
+  <!-- Calendar Page -->
+  <section id="calendarPage" style="display:none;">
+    <div class="calendar-header">
+      <button id="prevMonth">⬅</button>
+      <h2 id="monthYear"></h2>
+      <button id="nextMonth">➡</button>
+    </div>
+
+    <div class="calendar-weekdays">
+      <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div>
+      <div>Thu</div><div>Fri</div><div>Sat</div>
+    </div>
+
+    <div class="calendar-grid" id="calendarGrid"></div>
+
+    <!-- Bigger total month -->
+    <div id="monthTotal" class="big-total">Monthly Total: 0 hrs 0 mins 0 secs</div>
+  </section>
+
+  <!-- Current Time -->
+  <div id="currentTime"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
